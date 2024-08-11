@@ -1,24 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
       <div className="container">
         <div className="logo">
-          <img src={`${process.env.PUBLIC_URL}/assets/logo.png`} alt="Logo" />
+          <h1>MARKETLINK</h1>
         </div>
         <nav>
           <ul>
-            <li><a href="#" className="active">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><Link to="/" className="active">Home</Link></li>
+            <li><Link to="/shop">Shop</Link></li>
+            <li><Link to="/programs">Programs</Link></li>
+            <li><Link to="/gallery">Gallery</Link></li>
+            <li><Link to="/about-us">About Us</Link></li>
           </ul>
         </nav>
         <div className="auth-buttons">
-          <a href="#" className="login-btn">Login</a>
-          <a href="#" className="sign-in-btn">Sign in</a>
+          <Link to="/login" className="login-btn">Login</Link>
+          <Link to="/sign-in" className="sign-in-btn">Sign in</Link>
         </div>
       </div>
     </header>
@@ -26,4 +27,3 @@ function Header() {
 }
 
 export default Header;
-
