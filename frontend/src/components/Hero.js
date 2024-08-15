@@ -1,25 +1,20 @@
-import React from "react";
+import React from 'react';
 import './Hero.css';
+import shoppingIllustration from '../assets/shopping-illustration.png';
 
-
-function Hero() {
+const Hero = () => {
   return (
     <section className="hero">
-      <div className="container">
-        <div className="hero-content">
-          <h1>Online Shopping</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper dui nisl, non dictum odio pharetra et.
-          </p>
-          <a href="#" className="cta-btn">Read more</a>
-        </div>
-        <div className="hero-image">
-          <img src={`${process.env.PUBLIC_URL}/assets/shopping-illustration.png`} alt="Online Shopping" />
-        </div>
+      <div className="hero-content">
+        <h1>Welcome to MarketLink</h1>
+        <p>Your one-stop shop for homemade products.</p>
+        <a href="#shop" className="hero-button">Start Shopping</a>
+      </div>
+      <div className="hero-image">
+        <img src={shoppingIllustration} alt="Shopping" />
       </div>
     </section>
   );
-}
+};
 
 export default Hero;
-

@@ -1,57 +1,31 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header .logo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #222;
-  }
-  
-  .nav {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav a {
-    margin-left: 1rem;
-    font-size: 1rem;
-    color: #555;
-    transition: color 0.3s ease;
-  }
-  
-  .nav a:hover {
-    color: #007BFF;
-  }
-  
-  .nav .nav-buttons {
-    display: flex;
-    gap: 0.5rem;
-  }
-  
-  .nav .btn-primary {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-  }
-  
-  .nav .btn-secondary {
-    background-color: #fff;
-    color: #007BFF;
-    border: 2px solid #007BFF;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-  }
-  
-  .nav .btn-secondary:hover {
-    background-color: #007BFF;
-    color: #fff;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}

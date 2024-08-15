@@ -1,30 +1,27 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
+import logo from '../assets/logo.png';
 
-function Header() {
+const Header = () => {
   return (
-    <header>
-      <div className="container">
-        <div className="logo">
-          <h1>MARKETLINK</h1>
-        </div>
-        <nav>
-          <ul>
-            <li><Link to="/" className="active">Home</Link></li>
-            <li><Link to="/shop">Shop</Link></li>
-            <li><Link to="/programs">Programs</Link></li>
-            <li><Link to="/gallery">Gallery</Link></li>
-            <li><Link to="/about-us">About Us</Link></li>
-          </ul>
-        </nav>
-        <div className="auth-buttons">
-          <Link to="/login" className="login-btn">Login</Link>
-          <Link to="/sign-in" className="sign-in-btn">Sign in</Link>
-        </div>
+    <header className="header">
+      <div className="logo">
+        <img src={logo} alt="MarketLink" />
       </div>
+      <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/shop">Shop</Link></li>
+          <li><Link to="/programs">Programs</Link></li>
+          <li><Link to="/gallery">Gallery</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/login">Login</Link></li>
+          <li><Link to="/signin">Sign In</Link></li>
+        </ul>
+      </nav>
     </header>
   );
-}
+};
 
 export default Header;
